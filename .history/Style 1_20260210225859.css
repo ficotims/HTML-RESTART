@@ -1,0 +1,34 @@
+.carton
+{padding: 10px;
+border: 1px solid #aed1e6;
+margin: 50px;}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+
+  display: flex;              /* ← this is the magic line */
+  gap: 10px;                  /* space between boxes */
+  flex-wrap: wrap;            /* boxes go to next line on small screens */
+  justify-content: center;    /* centers the whole row if fewer than 3 fit */
+}
+
+.box {
+  flex: 1;             /* each box grows equally */
+  min-width: 220px;    /* prevents them from becoming too narrow */
+  background: #ffffff;
+  border: 2px solid #dee2e6;
+  border-radius: 12px;
+  padding: 30px 20px;
+  text-align: justify;
+  font-size: 1.4rem;
+  font-weight: 100;
+  color: #495057;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+/* Optional: hover effect */
+.box:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 28px rgba(0,0,0,0.14);
+}
